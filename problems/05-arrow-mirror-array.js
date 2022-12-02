@@ -10,8 +10,22 @@ arrowMirrorArray([1,2,3]); // => [ 1, 2, 3, 3, 2, 1 ]
 arrowMirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b', 'a' ]
 ***********************************************************************/
 
-// Your code here
-
+const arrowMirrorArray = (array) => {
+  let arr = []
+  for (let i = 0; i < array.length; i++){
+    let first = array[i]
+    // console.log(array[i])
+    arr.push(first)
+ }
+  for (let j = array.length - 1; j >= 0; j--) {
+    let second = array[j]
+    // console.log('J loop', array[j])
+    arr.push(second)
+  }
+return arr
+}
+console.log(arrowMirrorArray([1,2,3])); // => [ 1, 2, 3, 3, 2, 1 ]
+// console.log(arrowMirrorArray(['a', 'b', 'c', 'd'])); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b', 'a' ]
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

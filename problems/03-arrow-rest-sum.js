@@ -19,6 +19,14 @@ return num
 }
 
 
+// const arrowRestSum = (...sum) => {
+//   let num = 0
+//   for (let i = 0; i < sum.length; i++) {
+//     let char = sum[i]
+//     num += char
+//   }
+//   return num
+// }
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
