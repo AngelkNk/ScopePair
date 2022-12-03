@@ -27,9 +27,22 @@ Example 4:
   console.log(threeDays()); // prints "Happy New Year!"
 
 ***********************************************************************/
+function countDownTimer(down) {
+let count = Infinity
 
+  return function () {
+  if (down === 0) {
+    return "Happy New Year!"
+  } else {
+    
+  }
+  }
+}
 
-
+let threeDays = countDownTimer(3); // returns a function
+console.log(threeDays()); // returns a function
+console.log(threeDays()); // returns a function
+console.log(threeDays()); // prints "Happy New Year!"
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
